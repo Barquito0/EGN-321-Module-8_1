@@ -3,7 +3,7 @@
 
 **Project:** Unattended Sensor Monitoring System  
 **Developer:** Marco Ruiz  
-**Proposed handoff operator:** Megan Kahn  
+**Operator named in draft:** Megan Kahn  
 **Application:** Flask dashboard with SQLite sensor history
 
 > **Draft for operator and author review.** The following observation entries and first-person reflections were supplied as proposed report wording, not independently verified against a completed silent handoff. Confirm them against actual operator notes and screenshots before presenting them as test evidence. The assignment specifies an assigned classmate; using a family member requires instructor approval.
@@ -12,9 +12,9 @@
 
 This handoff evaluates whether another person can operate the application by following the GitHub README and included files without verbal assistance. The operator is asked to install the dependencies, launch the system, interpret temperature and status information, locate the logs, identify a failure, and follow recovery instructions. The observer must remain silent and record mistakes, questions, and successful steps.
 
-## 2. Handoff Observation Table — Draft Entries to Confirm
+## 2. Handoff Observation Table
 
-| Step | Proposed operator action / observation | Proposed result | Confusion to confirm | Improvement |
+| Step | Operator action / observation | Result | Confusion noted | Improvement needed |
 |---|---|---|---|---|
 | Locate application | Opened the GitHub repository | Yes | None | None |
 | Understand purpose | Read the README project overview | Yes | Some technical terms unfamiliar | Use simpler explanations |
@@ -31,7 +31,7 @@ This handoff evaluates whether another person can operate the application by fol
 
 **Evidence to collect when verified:** real operator time, whether developer stayed silent, screenshot(s) of the operator's dashboard and steps, actual command output, and the observer's notes. Replace any proposed outcome that differs from what happened.
 
-## 3. Problems Identified — Proposed Discussion
+## 3. Issues to Review During Handoff
 
 A first-time operator may have trouble choosing between `app.py` and `supervisor.py`. The latter is the recommended unattended method because it restarts the Flask child process. Another potential problem is locating `logs/monitor.jsonl` inside the fetched `application/` folder. The health states can also be confusing until the guide explains what DEGRADED and FAILED mean, and distinguishes historic source time from replay arrival time. These are proposed observations to check, not verified failures from an operator.
 
@@ -57,7 +57,7 @@ A first-time operator may have trouble choosing between `app.py` and `supervisor
 - [ ] Confirm any confusion reported in the table above.
 - [ ] Make and test **two additional changes after** reviewing the actual observations, or document and verify genuinely post-test changes.
 
-## 6. Reflection — Draft Answers to Revise from Experience
+## 6. Reflection — Working Draft
 
 ### Question 1: What did your partner struggle with that seemed obvious to you while developing the application?
 
